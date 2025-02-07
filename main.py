@@ -16,5 +16,5 @@ def numbFormat(x):
 print(f"{'Level':<5} - {'Honey Per Bee':<15} - {f'Honey Total (x{SLOT})':<15}")
 print("-"*45)
 for lvl in range(1, 26):
-    costBee = BONDCOST[lvl-1]/10*(1+BONDPERC/100)*10000
+    costBee = BONDCOST[lvl-1]/10*(1-BONDPERC/100)*10000
     print(f"{lvl:<5} - {numbFormat(costBee):<15} - {numbFormat(costBee*SLOT):<15}")
